@@ -19,9 +19,9 @@ This course serves as a beginner-friendly introduction to data science and progr
 |                 | Books/    | Source textbooks (VanderPlas), for reference/reading |
 |                 | data/     | Shared datasets used across notebooks                |
 
-## 02 - Assignments
+## Assignments
 
-Each module folder follows the same layout: numbered notebooks, a `README.md`, `glossary.md`, `quiz.md`, and `worksheet.md` (plus any data files a module needs). Most notebooks end with an optional 🔥 Challenge section for extra practice.
+The '02-Assignments' section contains folders for each course module, each of which contains the following: numbered notebooks, a `README.md`, `glossary.md`, `quiz.md`, and `worksheet.md` (plus any data files a module needs). When I completed an assignment in this module, the associated assignment folder was moved to the '03-Completed' folder.
 
 | Module                                                                                   | Topic                                                                                          |
 | ---------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- |
@@ -35,3 +35,6 @@ Each module folder follows the same layout: numbered notebooks, a `README.md`, `
 | [08-Describing_and_Visualizing_Data](02-Assignments/08-Describing_and_Visualizing_Data/) | Summary statistics and visualization with Matplotlib/Seaborn                                   |
 
 Modules 07 and 08 work entirely from local data files (in-folder or in [`data/`](data/)) — no network access required.
+
+## Completed Course Work
+[Work in Progress..]
