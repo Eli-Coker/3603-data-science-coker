@@ -13,15 +13,15 @@ x = 10
 print(type(x))
 ```
 
-   `Answer:` _______________________
+   `Answer:` <class 'int'>
 
 2. What scalar type would best represent:
-   - A person's name: _______
-   - Their age: _______
-   - Whether they passed a test: _______
+   - A person's name: string
+   - Their age: int
+   - Whether they passed a test: bool
 
 3. Why does `int('21')` work, but `int('twenty-one')` raise an error?  
-   `Answer:` _______________________
+   `Answer:` Because '21' is valid numeric syntax, whereas 'twenty-one' is not valid numeric syntax.
 
 ---
 
@@ -31,6 +31,16 @@ print(type(x))
 # Create a variable for each type and print its value and type.
 # Example: an int, float, str, and bool.
 ```
+Answer:
+my_int = 33
+my_float = 20.1
+my_str = Eli
+my_bool = True
+
+print(my_int, type(my_int))
+print(my_float, type(my_float))
+print(my_str, type(my_str))
+print(my_bool, type(my_bool))
 
 ### ✏️ Task: Arithmetic
 
@@ -39,6 +49,11 @@ print(type(x))
 # Print the total pay.
 # Print the total pay rounded to 2 decimal places (hint: round()).
 ```
+Answer:
+total_pay = hours_worked * hourly_rate
+print("Total pay:", total_pay)
+print("Total pay (rounded):", round(total_pay, 2))
+
 
 ### ✏️ Task: Casting Round Trip
 
@@ -46,18 +61,22 @@ print(type(x))
 # Given: user_input = "3.14159"
 # Convert it to a float, then print it rounded to 2 decimal places.
 ```
+Answer:
+float_value = float(user_input)
+print(round(float_value, 2))
 
 ### 🤖 Explain It
 
 In your own words: why does `input()` always return a string, and why does that matter when you want to do math with what the user typed?
 
+Answer: 'input()' always returns a string because the information the user enters will always be a string. To perform mathematical calculation with user-typed input, you must parse the input.
 ---
 
 ## 🔁 Section 2: Comparison Operators
 
 4. What does the `!=` operator mean?
 
-   `Answer:` _______________________
+   `Answer:` Not equal to
 
 5. What will the following code print?
 
@@ -67,10 +86,12 @@ b = 3
 print(a < b or b < 10)
 ```
 
-   `Answer:` _______________________
+   `Answer:` True
 
 6. What does `0 <= score <= 100` check, and how would you write the same thing *without* chaining?  
-   `Answer:` _______________________
+   `Answer:` It checks if a score is within the bounds of 0-100. 
+   To write without chaining, you can use 'and':
+   score >= 0 and score <= 100
 
 ---
 
@@ -81,12 +102,21 @@ print(a < b or b < 10)
 # Print True if it's within normal human body temperature range (97.0 to 99.0), else False.
 # Try it both as a chained comparison and as two separate comparisons joined with "and".
 ```
+Answer:
+print(97.0 <= temperature <= 99.0)
+print(temperature >= 97.0 and temperature <= 99.0)
 
 ### 🤖 Explain It
 
 In your own words: what's the difference between `=` and `==` in Python? Why does mixing them up cause errors (or worse, silently wrong code)?
 
+Answer: '=' Assigns a value to a variable, while '==' compares the values of two variables. Mixing these up causes errors as '=' and '==' perform different functions.
+
 **If you've written C++:** explain why `0 <= score <= 100` is safe to write in Python but dangerous to write in C++. What does the C++ version actually evaluate to, and how would you fix it?
+
+Answer:
+This is safe to write in Python because it supports chained comparisons, but it's dangerous in C++ because it does not process chained comparisons. The C++ version would evaluate (0 <= score) <= 100, meaning the answer will always be true.
+To fix this in C++, use &&: score >= 0 && score <= 100
 
 ---
 
@@ -95,11 +125,16 @@ In your own words: what's the difference between `=` and `==` in Python? Why doe
 7. Write a conditional that prints "Pass" if a grade is >= 70, and "Fail" otherwise.
 
 ```python
-# Your code:
+# Your code: 
+
+if grade >= 70:
+    print("Pass")
+else:
+    print("Fail")
 ```
 
 8. What does `elif` allow you to do that separate `if` statements don't?  
-   `Answer:` _______________________
+   `Answer:` 'elif' allows you to create mutually exclusive chains of decisions.
 
 9. What will this print?
 
@@ -109,7 +144,7 @@ has_ticket = False
 print(age >= 13 and has_ticket)
 ```
 
-   `Answer:` _______________________
+   `Answer:` False
 
 ---
 
@@ -120,6 +155,16 @@ print(age >= 13 and has_ticket)
 # Print the BMI category:
 # "Underweight" (< 18.5), "Normal" (18.5-24.9), "Overweight" (25-29.9), "Obese" (30+)
 ```
+Answer:
+
+if bmi < 18.5:
+    print("Underweight")
+elif bmi < 25:
+    print("Normal")
+elif bmi < 30:
+    print("Overweight")
+else:
+    print("Obese")
 
 ### ✏️ Task: Multi-Line Branches
 
@@ -132,6 +177,19 @@ print(age >= 13 and has_ticket)
 # Each branch should have at least 3 lines — this is the same shape as the
 # "One Branch, Many Lines" example in the notebook.
 ```
+Answer:
+subtotal = cart_items * item_price
+
+if member_since_days >= 365:
+    loyalty_discount = subtotal * 0.15
+    final_price = subtotal - loyalty_discount
+    print("Loyalty discount applied!")
+    print("Discount amount:", loyalty_discount)
+    print("Final price:", final_price)
+else:
+    print("No discount applied")
+    print("Subtotal:", subtotal)
+    print("Final price:", subtotal)
 
 ### ✏️ Task: Your Turn
 
@@ -140,10 +198,21 @@ Write a program that asks for the weather and prints:
 - "Take an umbrella" if it's raining
 - "Check the forecast" otherwise
 
+Answer:
+weather = input('What is the weather like? ')
+
+if weather.lower() == 'sunny':
+    print('Bring sunscreen')
+elif weather.lower() == 'rainy':
+    print('Take an umbrella')
+else:
+    print('Check the forecast')
+
 ### 🤖 Explain It
 
 In your own words: what's the difference between using `and` versus writing nested `if` statements to check two conditions? Do they always produce the same result?
 
+Answer: 'and' evaluates both conditions at once, while 'if' statements evaluate conditions separatley. They do not always produce the same result.
 ---
 
 ## 🚀 Section 4: Going Further (Optional)
@@ -185,9 +254,9 @@ These pair with the "🔥 Challenge" sections in the notebooks — skip if you h
 
 ## 🧾 Submit Checklist
 
-- [ ] I practiced creating and casting each scalar type.
-- [ ] I used arithmetic operators, including `//` and `%`.
-- [ ] I wrote conditionals using comparison and logical operators.
-- [ ] I used a chained comparison at least once.
-- [ ] I wrote at least one branch with multiple lines inside it.
-- [ ] I completed the "Explain It" prompts in my own words.
+- [X] I practiced creating and casting each scalar type.
+- [X] I used arithmetic operators, including `//` and `%`.
+- [X] I wrote conditionals using comparison and logical operators.
+- [X] I used a chained comparison at least once.
+- [X] I wrote at least one branch with multiple lines inside it.
+- [X] I completed the "Explain It" prompts in my own words.
