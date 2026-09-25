@@ -1,28 +1,12 @@
-# 3603 — Programming for Data Science
+# Eli Coker — Data Science Repository Portfolio
 
-Course materials for MSU Texas CS/DS 3603. Beginner-friendly, project-focused Python and data science, built around Jupyter notebooks and two open-source textbooks by Jake VanderPlas.
+## About Me
 
-## 01 - Start here
+My name is Eli Coker. I am a Computer Science major at MSU Texas. I enjoy playing/collecting video games, drawing, and programming.
 
-New to the course? Work through **[`01-StartHere/`](01-StartHere/)** before touching an assignment — it's an 8-part guide covering everything from creating a GitHub account to submitting finished notebooks:
+## About Course (3603 Programming for Data Science)
 
-> **You will notice some OVERLAP between some of the Parts, if you've done it already, just skip it (e.g. git config --global blah blah blah)**
-
-| Part                         | Covers                                                               |
-| ---------------------------- | -------------------------------------------------------------------- |
-| [0](01-StartHere/Part-00.md) | Checking what's already installed (Git, Python, VS Code, Conda)      |
-| [1](01-StartHere/Part-01.md) | GitHub account + git identity                                        |
-| [2](01-StartHere/Part-02.md) | Installing/repairing Git, Python 3.13, and VS Code                   |
-| [3](01-StartHere/Part-03.md) | Creating and connecting your course repository (`upstream`/`origin`) |
-| [4](01-StartHere/Part-04.md) | Python virtual environment + `requirements.txt`                      |
-| [5](01-StartHere/Part-05.md) | Using Jupyter notebooks in VS Code                                   |
-| [6](01-StartHere/Part-06.md) | Committing and submitting your work                                  |
-| [7](01-StartHere/Part-07.md) | Maintaining your repo and troubleshooting git                        |
-| [8](01-StartHere/Part-08.md) | Quick reference for the whole workflow                               |
-
-Course dependencies (numpy, pandas, matplotlib, seaborn, scikit-learn, jupyter) live in [`01-StartHere/requirements.txt`](01-StartHere/requirements.txt).
-
-This course runs entirely on a **local VS Code + venv + git** setup — not Colab or Codespaces.
+This course serves as a beginner-friendly introduction to data science and programming in Python, covering topics such as Scalar Types, Strings, Python Functions, etc.
 
 ## Repo structure
 
@@ -36,9 +20,9 @@ This course runs entirely on a **local VS Code + venv + git** setup — not Cola
 |                 | data/     | Shared datasets used across notebooks                |
 |                 | Archive/  | Retired modules (old `04-Functions`, `05-Loops_and_Iteration`) |
 
-## 02 - Assignments
+## Assignments
 
-Each module folder follows the same layout: numbered notebooks, a `README.md`, `glossary.md`, `quiz.md`, and `worksheet.md` (plus any data files a module needs). Most notebooks end with an optional 🔥 Challenge section for extra practice.
+The '02-Assignments' section contains folders for each course module, each of which contains the following: numbered notebooks, a `README.md`, `glossary.md`, `quiz.md`, and `worksheet.md` (plus any data files a module needs). When I completed an assignment in this module, the associated assignment folder was moved to the '03-Completed' folder.
 
 | Module                                                                                   | Topic                                                                                          |
 | ---------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- |
@@ -53,13 +37,5 @@ Each module folder follows the same layout: numbered notebooks, a `README.md`, `
 
 Modules 07 and 08 work entirely from local data files (in-folder or in [`data/`](data/)) — no network access required.
 
-## 03 - Completed work
-
-Copy your finished notebooks into [`Completed/`](Completed/) as you go — see [Part 6](01-StartHere/Part-06.md) of the setup guide for the commit/submit workflow.
-
-## Books
-
-Two open-source textbooks by [Jake VanderPlas](https://github.com/jakevdp) anchor the course content:
-
-- **[Intro2Python](04-Resources/Books/Intro2Python/)** — _A Whirlwind Tour of Python_
-- **[PythonDataScienceHandbook](04-Resources/Books/PythonDataScienceHandbook/)** — _Python Data Science Handbook_
+## Completed Course Work
+[Work in Progress..]
