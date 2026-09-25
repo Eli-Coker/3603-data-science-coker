@@ -8,7 +8,7 @@ This module explained...
 - Writing conditional expressions `if`/`elif`/`else`
 - Recognizing `match`/`case`
 
-One specific thing that clicked for me in this module is the usefulness of type casting and how it can be used in arithmetic operations.
+- One specific thing that clicked for me in this module is the usefulness of type casting and how it can be used in arithmetic operations.
 The topic of match/case covered in 02-Control_Flow may be worth revisiting so that I can better recognize when it may be useful/preferable.
 I found the content in this module to be well-organized and simple to follow along with. I don't think there's anything major I would change.
 ---
