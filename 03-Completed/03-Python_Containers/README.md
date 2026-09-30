@@ -1,5 +1,6 @@
 # 📂 Module 03: Python Containers
 
+## Completed Module Commentary
 This module explained...
 - How to create/manipulate lists
 - Tuples, their immutability, and how to use them
