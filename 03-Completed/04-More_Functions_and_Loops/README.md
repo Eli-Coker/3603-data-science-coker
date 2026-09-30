@@ -1,4 +1,6 @@
 # 📂 Module 04: More Functions & Loops
+
+## Completed Module Commentary
 This module explained...
 - Function extras such as default values and keyword arguments
 - Returning multiple values as a tuple
