@@ -1,5 +1,6 @@
 # 📂 Module 03b: Containers → Functions
 
+## Completed Module Commentary
 This module explained...
 - The real use for lists and indexing, tracing for-loops, and the 'Accumulate', 'Count', and 'Filter' Patterns
 - Choosing which container to use
@@ -13,7 +14,7 @@ The content in this module was clear and generally well-organized, though I woul
 
 ---
 
-## 🔗 Assignments
+## 🔗 Completed Assignments
 
 | Notebook | Description |
 |----------|-------------|
