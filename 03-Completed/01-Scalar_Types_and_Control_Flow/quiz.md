@@ -16,7 +16,9 @@ ANSWER: A
 **2.** (Code Tracing) What prints?
 ```python
 x = 10
-print(type(x))   #ANSWER: INT
+print(type(x))
+
+#ANSWER: INT
 
 ```
 
@@ -34,9 +36,9 @@ print(int('21') + 1)
 ```  
 
 
-**5.** (True/False) `input()` always returns a string, even if the user types a number  A
-    
-NSWER: TRUE.
+**5.** (True/False) `input()` always returns a string, even if the user types a number  
+
+ANSWER: TRUE.
 
 ---
 
@@ -44,12 +46,16 @@ NSWER: TRUE.
 
 **6.** (Code Tracing) What prints?
 ```python
-print(17 // 5) A#ANSWER 3
+print(17 // 5)
+
+#ANSWER 3
 ```
 
 **7.** (Code Tracing) What prints?
 ```python
-print(17  5) #ANSWER: 2
+print(17  5)
+
+#ANSWER: 2
 ```
 
 **8.** (Multiple Choice) Which operator raises a number to a power?
@@ -58,7 +64,9 @@ A) `^`  B) `**`  C) `//`  D)`%%`
     
 ANSWER: B
   
-9.** (Short Answer) `'5' + '5'` does **not** produce `10`. What does it produc, and why?,a ANSWER: '5' + '5' puoduces the string '55' because the '5s' are strings themselves and the + concatenates them.?
+9.** (Short Answer) `'5' + '5'` does **not** produce `10`. What does it produce, and why?
+
+ANSWER: '5' + '5' produces the string '55' because the '5s' are strings themselves, and the + concatenates them.
 
 ---
 
@@ -81,30 +89,32 @@ ANSWER: It reverses the result of a boolean
 ```python
 if score ___ 100:
     print("Perfect score!")
-   #ANSWER:= = 
+
+#ANSWER:== 
 ```
 
 **13.** (Multiple Choice) Which keyword adds an additional condition after an initial `if`?
 A) `else`  B) `elseif`  C) `elif`  D) `when' 
 
-ANSWER:C`
+ANSWER: C
 
 **14.** (Code Tracing) What prints?
 ```python
 score = 85
 print(0 <= score <= 100)
+
 #ANSWER: True
 ```
 
 **15.** (True/False) Python uses indentation (whitespace) to define code blocks — it's not just a style choice. 
 
 
-SWER: True
+ANSWER: True
 
 **16.** (Short Answer) `and` requires every condition to be True to return True. What does `or` require
 
  
-SWER: 'or requires one condition to be True to return True
+ANSWER: 'or requires one condition to be True to return True
 
 ---
 
