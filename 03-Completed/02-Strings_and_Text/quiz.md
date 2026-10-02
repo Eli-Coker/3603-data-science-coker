@@ -10,6 +10,7 @@ Try every question on your own first — the Answer Key is at the bottom, no pee
 
 **1.** (Multiple Choice) Which of these lets you write a string that spans multiple lines without using `\n`?
 A) `'...'`  B) `"..."`  C) `'''...'''`  D) `f'...'`
+
 Answer: C
 -
 
@@ -17,37 +18,32 @@ Answer: C
 ```python
 word = 'Python'
 print(word[-1])
-nswer: n
-A
-``
+
+Answer: n
+```
 
 **3.** (Code Tracing) What prints?
 ```python
 word = 'Python'
-print(word[::-
-nswer: nohtyP
-A
+print(word[::-1])
+
+Answer: nohtyP
 
 ```
 
-**4.** (True/False) Writing `'It's a test'` (an unescaped apostrophe inside single quotes) cause
-nswer: Truse
-A
-n error.
+**4.** (True/False) Writing `'It's a test'` (an unescaped apostrophe inside single quotes) causes an error.
+Answer: True
 
-**5.** (Short Answer) Why can't you run `word[0] = 'J'` if `wor
-nswer: BYou can't run word[0] = 'J' if word is a string because you cannot alter the contents of a preexisting string, you must create a new string.
-Slight crrectionL: Strings are immutable
-C
-A
-is a string?
+**5.** (Short Answer) Why can't you run `word[0] = 'J'` if `word' is a string?
+
+Answer: You can't run word[0] = 'J' if word is a string because you cannot alter the contents of a preexisting string; you must create a new string.
+Slight correction: Strings are immutable
 
 **6.** (Code Tracing) What does this print (describe the spacing)?
 ```python
-prin
-nswrer: Hi_____There (the \t adds tab space before 'There', the "_____" I added represents that space)
-A
-Hi\tThere')
+print('Hi\tThere')
+
+Answrer: Hi_____There (the \t adds tab space before 'There', the "_____" I added represents that space)
 ```
 
 ---
@@ -56,93 +52,77 @@ Hi\tThere')
 
 **7.** (Code Tracing) What prints?
 ```python
-print(
-nswer: Ada
-A
-Ada  '.strip())
+print('  Ada  '.strip())
+
+Answer: Ada
 ```
 
 **8.** (Code Tracing) What prints?
 ```python
-print('the quic
-nswer: ['the', 'quikck', 'brown', 'fox']
-A
-rown fox'.split())
+print('the quick brown fox'.split())
+
+Answer: ['the', 'quick', 'brown', 'fox']
 ```
 
-**9.** (Short Answer) What's the difference between using `.find()` and using the `in` keyword to check w
-nswer: .'find() 'bprovides the location index of a keyword, while 'in' acts as a boolean and prints 'True' or 'False'
-A
-her a substring is present?
+**9.** (Short Answer) What's the difference between using `.find()` and using the `in` keyword to check whether a substring is present?
+
+Answer: '.find()' provides the location index of a keyword, while 'in' acts as a boolean and prints 'True' or 'False'
 
 **10.** (Multiple Choice) Which method checks whether a string contains only digit characters?
-A) `.isdigit()`  B) `.isalp
-nswer: A
-A
-)`  C) `.find()`  D) `.strip()`
+A) '.isdigit()' B) '.isalpha()' C) '.find()' D) '.strip()'
+
+Answer: A
 
 **11.** (Code Tracing) What prints?
 ```python
-p
-nswer: True
-A
-t('hello.py'.endswith('.py'))
+print('hello.py'.endswith('.py'))
+
+Answer: True
 ```
 
-**12.** (Short Answer
-nswer: 'a,b,c'.split(',') returns ['a',  'b',  'c'], where ethe string is split into the separate letter depending on the location of the ','
-A
-hat does `'a,b,c'.split(',')` return?
+**12.** (Short Answer) What does `'a,b,c'.split(',')` return?
+
+Answer: 'a,b,c'.split(',') returns ['a',  'b',  'c'], where the string is split into separate letters depending on the location of the ','
 
 ---
 
 ## Section C — Formatted Strings
 
 **13.** (Code Tracing) What prints?
-```pyt
-nswe:r: 9.50
-A
-
+```python
 price = 9.5
 print(f'{price:.2f}')
+
+Answer: 9.50
 ```
 
-**14.** (Code Tracing) Wha
-nswer: 1,234,567
-A
-rints?
+**14.** (Code Tracing) What print?
 ```python
 print(f'{1234567:,}')
+
+Answer: 1,234,567
 ```
 
-**15.** (Short Answer) What do
-nswerL: The 'f' at the front of an f-string defines where different variables and functions are used in the f-strinCorrection: It marks the string as an f-string
+**15.** (Short Answer) What does the `f` at the front of an f-string actually do?
 
-g
-A
-the `f` at the front of an f-string actually do?
+Answer: The 'f' at the front of an f-string defines where different variables and functions are used in the f-string
+Correction: It marks the string as an f-string
 
-**16.** (Multiple Choice) Which format spec right-aligns a value in a 10-chara
-nswer:Correction: B
+**16.** (Multiple Choice) Which format spec right-aligns a value in a 10-character field? A) `:<10`  B) `:>10`  C) `:^10`  D) `:10>`
+Answer: A
+Correction: B
 
- A
-A
-r field?
-A) `:<10`  B) `:>10`  C) `:^10`  D) `:10>`
-
-**17.** (Code Traci
-nswer: 10
-A
- What prints?
+**17.** (Code Tracing) What prints?
 ```python
 x = 5
 print(f'{x * 2}')
+
+Answer: 10
 ```
 
-**18.** (Short Answer) Name the two older string-formatt
-nswer: The two olde r string-formatting styles are '.format()' and '% formatting'
-A
- styles that predate f-strings (still seen in older code).
+**18.** (Short Answer) Name the two older string-formatting styles that predate f-strings (still seen in older code).
+
+Answer: The two older string-formatting styles are '.format()' and '% formatting'
 
 ---
 
