@@ -10,6 +10,8 @@ Try every question on your own first. The Answer Key is at the bottom, so don't 
 
 **1.** (Short Answer) Why is `scores = [87, 91, 74]` better than `score1 = 87`, `score2 = 91`, `score3 = 74`? Give two reasons.
 
+Answer: One reason that 'scores = [87, 91, 74]' is better than setting each score separatley is that the the list stores all related score values under one name. Another reason is that `scores = [87, 91, 74]` allows you to easily add or delete scores without significantly changing any code.
+
 **2.** (Code Tracing) What prints?
 ```python
 scores = [87, 91, 74, 88, 95]
@@ -18,13 +20,21 @@ scores.remove(91)
 print(scores[1], scores[-1], len(scores))
 ```
 
+Answer: 74, 60, 5
+
 **3.** (Multiple Choice) Which container fits "Student ID → GPA" best?
 A) list  B) tuple  C) dictionary  D) set
+
+Answer: C
 
 **4.** (Multiple Choice) Which container fits "an RGB color" best?
 A) list  B) tuple  C) dictionary  D) set
 
+Answer: B
+
 **5.** (Short Answer) Give a better description of a tuple than "an immutable list."
+
+Answer: A tuple is a collection of unchanging component values.
 
 **6.** (Code Tracing) What prints?
 ```python
@@ -32,6 +42,8 @@ a = {"OOP", "Database", "Algorithms"}
 b = {"Database", "Networks"}
 print(a & b)
 ```
+
+Answer: "Database"
 
 **7.** (Code Tracing) Evaluate one step at a time. What is the value?
 ```python
@@ -42,11 +54,16 @@ students = [
 students[-1]["name"][0]
 ```
 
+Answer: "Bob"
+CORRECTION: 'B', The [0] points to the first letter of the string "Bob"
+
 ---
 
 ## Section B — Patterns
 
 **8.** (Short Answer) Accumulate and Count both start at `0`. What's the difference in how they update?
+
+Answer: Accumulate updates by adding the result of each loop iteration to a final total, while Count adds 1 when an iteration meets a certain criteria.
 
 **9.** (Code Tracing) What prints?
 ```python
@@ -58,11 +75,16 @@ for n in nums:
 print(x)
 ```
 
+Answer: [-2, -5]
+
 **10.** (Multiple Choice) Which pattern is question 9?
 A) Accumulate  B) Count  C) Filter  D) Best So Far
 
+Answer: C
+
 **11.** (Short Answer) When finding the maximum with the Best So Far pattern, why should `best` start at the first item instead of `0`?
 
+Answer: 'best' should start at the first item instead of '0' to accuratley compare the given items to each other, as starting with '0' could raise an error if every item is negative.
 ---
 
 ## Section C — Function Basics
@@ -73,7 +95,11 @@ def square(x):
     return x * x
 ```
 
+Answer: Nothing prints when this cell runs as there are no print statements.
+
 **13.** (Short Answer) In `def area(width, height):` and `area(3, 5)`, which are the parameters and which are the arguments?
+
+Answer: '(width, height)' are the parameters, and '(3, 5)' are the arguments.
 
 **14.** (Code Tracing) What prints?
 ```python
@@ -82,6 +108,8 @@ def square(x):
 
 print(square(3) + square(square(2)))
 ```
+
+Answer: 25
 
 **15.** (Code Tracing) What prints? (Careful!)
 ```python
@@ -92,7 +120,12 @@ result = double(5)
 print(result)
 ```
 
+Answer: 10
+CORRECTION: 10 AND 'None', as there is not return statement in the double(x) function
+
 **16.** (True/False) `print()` gives a value back to the program so it can be used in later calculations.
+
+Answer: False
 
 **17.** (Code Tracing) What prints?
 ```python
@@ -103,7 +136,14 @@ def check(x):
 print(check(1))
 ```
 
+Answer: "big"
+
 **18.** (Short Answer) Give three reasons functions are useful *besides* avoiding copy/paste.
+
+Answer: 
+Reason #1 - They define operations that you can easily call when needed
+Reason #2 - They help with creating pipelines for processing data
+Reason #3 - They improve the readability of code
 
 ---
 
@@ -118,6 +158,8 @@ def total(numbers):
         return result
 ```
 
+Answer: 'return result' in the wrong place, so only one iteration will occur
+
 **20.** (Code Tracing) What prints?
 ```python
 def add_one(values):
@@ -129,6 +171,8 @@ b = add_one(a)
 print(a)
 ```
 
+Answer: [5, 1]
+
 **21.** (Code Tracing) What prints?
 ```python
 nums = [3, 1, 2]
@@ -136,10 +180,23 @@ x = nums.sort()
 print(x, nums)
 ```
 
+Answer: [1, 2, 3] [3, 1, 2]
+CORRECTION: None [1, 2, 3], as the .sort() function returns none to x and nums is changed by .sort()
+
 **22.** (Multiple Choice) `frequency(["a", "b", "a"])` from Notebook 05 turns a list into a...
 A) number  B) bool  C) list  D) dictionary
 
+Answer: D
+
 **23.** (Short Answer) Write the contract (IN / OUT / DOES) for a function `count_above(numbers, threshold)`.
+
+Answer:
+IN - A list of numbers and a threshold number
+OUT - A new list of numbers
+DOES - Creates a new list of numbers that are above the threshold.
+
+CORRECTION:
+OUT - int | DOES - How many numbers greater than threshold
 
 **24.** (Code Tracing) Given the functions from Notebook 06, what prints?
 ```python
@@ -147,6 +204,8 @@ numbers = [10, -3, 20, 30]
 clean = remove_negatives(numbers)
 print(above(clean, average(clean)))
 ```
+
+Answer: [30]
 
 ---
 
