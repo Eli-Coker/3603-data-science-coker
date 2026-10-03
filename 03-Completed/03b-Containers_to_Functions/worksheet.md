@@ -159,31 +159,7 @@ OUT - A number
 3. Draw the pipeline with arrows, labeling each arrow with the data's shape.
 
 Answer:
-    list of numbers
-           │
-           ▼
- ┌──────────────────┐
- │  filter_prices   │
- └──────────────────┘
-           │
-           ▼
-  list of numbers [clean] 
-           │             
-           ▼                  
-     ┌───────────┐              
-     │  add_tax  │              
-     └───────────┘              
-           │                    
-           ▼                    
-list of numbers [updated]                   
-           │                    
-           ▼
-     ┌───────────┐
-     │   total   │
-     └───────────┘
-           │
-           ▼
-     number result
+    list of numbers --> [filter_prices] --> list of numbers --> [add_tax] --> list of numbers --> [total] --> number result
 
 > 🤖 **Explain It:** Why is a pipeline of small functions easier to fix than one big block of code?
 

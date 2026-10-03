@@ -55,6 +55,7 @@ students[-1]["name"][0]
 ```
 
 Answer: "Bob"
+
 CORRECTION: 'B', The [0] points to the first letter of the string "Bob"
 
 ---
@@ -121,6 +122,7 @@ print(result)
 ```
 
 Answer: 10
+
 CORRECTION: 10 AND 'None', as there is not return statement in the double(x) function
 
 **16.** (True/False) `print()` gives a value back to the program so it can be used in later calculations.
@@ -141,8 +143,11 @@ Answer: "big"
 **18.** (Short Answer) Give three reasons functions are useful *besides* avoiding copy/paste.
 
 Answer: 
+
 Reason #1 - They define operations that you can easily call when needed
+
 Reason #2 - They help with creating pipelines for processing data
+
 Reason #3 - They improve the readability of code
 
 ---
@@ -181,6 +186,7 @@ print(x, nums)
 ```
 
 Answer: [1, 2, 3] [3, 1, 2]
+
 CORRECTION: None [1, 2, 3], as the .sort() function returns none to x and nums is changed by .sort()
 
 **22.** (Multiple Choice) `frequency(["a", "b", "a"])` from Notebook 05 turns a list into a...
@@ -191,11 +197,15 @@ Answer: D
 **23.** (Short Answer) Write the contract (IN / OUT / DOES) for a function `count_above(numbers, threshold)`.
 
 Answer:
+
 IN - A list of numbers and a threshold number
+
 OUT - A new list of numbers
+
 DOES - Creates a new list of numbers that are above the threshold.
 
 CORRECTION:
+
 OUT - int | DOES - How many numbers greater than threshold
 
 **24.** (Code Tracing) Given the functions from Notebook 06, what prints?
