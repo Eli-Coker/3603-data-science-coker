@@ -1,0 +1,9 @@
+{
+  "name": "Database Management Systems",
+  "credits": 3,
+  "topics": [
+    "Data Modeling",
+    "Entity Relationships",
+    "MySQL"
+  ]
+}
