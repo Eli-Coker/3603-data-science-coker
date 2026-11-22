@@ -115,12 +115,12 @@ numbers.mean()
 
 **20.** (Short Answer) The Markdown text `The item costs $5 and the tax is $2.` renders strangely. Why, and how do you fix it?
 
-**Answer:** The text renders strangely because '$' indicates LaTeX math. To fix this, use backslashes('\') to escape:  
+**Answer:** The text renders strangely because '$' indicates LaTeX math. To fix this, use backslashes(`\`) to escape:  
 - (e.g.) The item costs \$5 and the tax is \$2.
 
 **21.** (Short Answer) You typed two lines directly under each other in a Markdown cell, but they render as **one** line. Name two ways to fix it.
 
-**Answer:** You can use a <br> tag to force a line break or end a line with two spaces.
+**Answer:** You can use a `<br>` tag to force a line break or end a line with two spaces.
 
 **22.** (Short Answer) Why might you add narrative Markdown cells between code cells instead of just writing code comments?
 
@@ -211,6 +211,7 @@ A) `.head()`  B) `.info()`  C) `.describe()`  D) `.columns()`
 print([1, 2] * 2)
 print(np.array([1, 2]) * 2)
 ```
+**Answer:** [1, 2, 1, 2] and [2 4]
 
 **36.** (Matching) Choose the best chart (line, bar, scatter, or histogram) for each question:
 a) Which department sold the most? 

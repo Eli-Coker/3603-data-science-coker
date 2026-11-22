@@ -216,11 +216,6 @@ Answer: C
 
 **30.** (Short Answer) In a GeoJSON `Point`, the coordinates are written as `[-98.5, 33.9]`. Which number is the latitude?
 
-<<<<<<< HEAD
-=======
 Answer: The first value '-98.5' is the latitude
+
 CORRECTION: 33.9; GeoJSON stores values as [longitude, latitude]
-
----
->>>>>>> f859d58ec1c8e4928da08c66d7a7883e0f6215fb
-

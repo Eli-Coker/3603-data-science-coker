@@ -138,7 +138,7 @@ A) `df['Age']`  B) `df[['Age']]`  C) `df.Age`  D) `df.loc[0]`
 
 **28.** (Short Answer) Why does `.astype('int64')` fail on a column with missing values, while `.astype('Int64')` works?
 
-`Answer:`
+`Answer:` In this case, `.astype('int64')` fails because it uses NumPy's standard interger type, which cannot represent missing values.
 
 **29.** (Short Answer) Before deleting rows with a repeated `order_id`, why would you look at `df[df.duplicated(subset=['order_id'], keep=False)]` first?
 
